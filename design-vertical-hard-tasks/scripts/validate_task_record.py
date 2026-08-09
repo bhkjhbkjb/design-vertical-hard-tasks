@@ -31,6 +31,18 @@ SUBMISSION_FIELDS = [
     "打分checklist（必填）",
 ]
 
+PRIMARY_CATEGORIES = [
+    "互联网与平台业务",
+    "科技软件与 AI 工作流",
+    "游戏与互动内容",
+    "品牌市场与电商零售",
+    "投资战略、专业服务与企业经营",
+    "金融服务与财富投研",
+    "教育科研与生命科学",
+    "法律、政务与公共服务",
+    "房地产与大宗资产",
+]
+
 READY_REQUIRED_FIELDS = [
     field for field in SUBMISSION_FIELDS if field != "uid"
 ]
@@ -158,6 +170,10 @@ def main() -> int:
     task_type = str(submission.get("任务类型") or "")
     if LEGACY_TIER_RE.search(task_type) or any(label in task_type for label in ("探索型", "流程型", "系统型")):
         errors.append("任务类型不得使用已废止的 L1/L2/L3 或旧层级名称")
+
+    primary_category = submission.get("题目领域一级目录")
+    if not is_empty(primary_category) and primary_category not in PRIMARY_CATEGORIES:
+        errors.append("题目领域一级目录不在九个受控值中")
 
     prompt = str(submission.get("题目") or "")
     leakage_terms = [term for term in ("标准答案", "打分checklist", "做题关键步骤", "INTERNAL—禁止写入题面") if term in prompt]
