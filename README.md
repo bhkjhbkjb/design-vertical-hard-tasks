@@ -1,2 +1,7 @@
 # design-vertical-hard-tasks
-中文垂直领域高难度 Agent 评测任务设计与修订 skill（含题库与专家语料引用）
+
+本仓库收录以下 WorkBuddy skill（用户自定义）：
+
+- `design-vertical-hard-tasks/`
+
+> 上传前已对服务器 IP、密钥等敏感信息做脱敏处理。
