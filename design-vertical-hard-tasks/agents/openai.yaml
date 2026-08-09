@@ -1,4 +1,4 @@
 interface:
   display_name: "垂域高难度题目设计"
-  short_description: "将专家真实业务问题转化为可核验、可提交的垂域高难度标注题目"
-  default_prompt: "使用 $design-vertical-hard-tasks 将我的真实业务场景和材料设计成一条可核验的高难度题目。"
+  short_description: "主动检索真实资料，将专家业务问题设计为六维高难度题目卡"
+  default_prompt: "使用 $design-vertical-hard-tasks 主动检索并核验真实资料，将我的业务场景输出为六维高难度题目卡。"
