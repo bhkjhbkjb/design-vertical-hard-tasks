@@ -1,25 +1,31 @@
 # Domain taxonomy
 
-Use the current live submission template as the authoritative controlled list. Do not invent a primary category or silently remap an expert's field.
+Use exactly one of these fifteen controlled primary categories:
 
-The legacy second-phase table visibly contains these primary labels, despite its heading stating a different count:
+1. 个人金融与理财投资
+2. 商业与市场分析
+3. 职业发展与教育规划
+4. 企业经营与战略决策
+5. 房地产与大宗资产
+6. 科技与产品研发
+7. 个人生活与重大决策
+8. 互联网与平台业务
+9. 科技软件与 AI 工作流
+10. 游戏与互动内容
+11. 品牌市场与电商零售
+12. 投资战略、专业服务与企业经营
+13. 金融服务与财富投研
+14. 教育科研与生命科学
+15. 法律、政务与公共服务
 
-1. 互联网与平台业务
-2. 科技软件与 AI 工作流
-3. 游戏与互动内容
-4. 品牌市场与电商零售
-5. 投资战略、专业服务与企业经营
-6. 金融服务与财富投研
-7. 教育科研与生命科学
-8. 法律、政务与公共服务
-9. 房地产与大宗资产
-
-Treat this list as provisional whenever a current sheet or leader update is available.
+Do not invent, abbreviate, merge, split, or silently rename a primary category.
 
 ## Selection rules
 
-- Choose the primary category by the real workflow and decision owner, not by keywords in an attachment.
-- Use a concise existing secondary category when one fits; otherwise propose a professional extension without changing the primary label.
-- Make the tertiary category specific enough to describe the real task, not merely the industry.
-- Record an uncertain category as a pending confirmation and keep the task `DRAFT` if the live catalog cannot be checked.
+- Choose the primary category by the real workflow, professional method, and decision owner—not by isolated keywords.
+- Create the secondary category freely. Make it concise, professional, and specific enough to distinguish the actual workstream.
+- Prefer a reusable capability label such as `平台治理与合规`、`数据平台运维`、`游戏客户端工程`、`财富产品测算` or `科研数据分析`, rather than a one-off task title.
+- Do not output a tertiary category in the standard six-field task card.
+- If a task crosses categories, choose the category that owns the decisive judgment and final work product. Mention supporting disciplines inside the prompt rather than adding multiple primary categories.
+- Record genuine ambiguity as a pending confirmation and keep the task `DRAFT`.
 - Do not use L1/L2/L3 in any category field.
